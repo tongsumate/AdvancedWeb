@@ -1,5 +1,5 @@
-from flask import flash
-server = flash(__name__)
+from flask import Flash
+server = Flash(__name__)
 
 @server.route("/")
 def hello():
