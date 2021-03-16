@@ -51,7 +51,7 @@ class TestEmployee(unittest.TestCase):
         self.assertEqual(self.emp_2.pay,63000)
 
     def test_monthly_schedule(self):
-        with patch('emplyee.request.get') as mocked_get:
+        with patch('employee.request.get') as mocked_get:
             mocked_get.return_value.ok = True
             mocked_get.return_value.txt = 'Success'
 
